@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>خروجی الگوی تحقیق</title>
+
+    <style>
+        body {
+            font-family: "B Nazanin", Arial, sans-serif;
+            background-color: #f4f6f8;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 700px;
+            margin: 60px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-family: "B Titr", Arial, sans-serif;
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-family: "B Nazanin", Arial, sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+            color: #2c7be5;
+            margin-bottom: 5px;
+        }
+
+        .section-content {
+            font-family: "B Nazanin", Arial, sans-serif;
+            background-color: #f9fafb;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .back-btn {
+            font-family: "B Nazanin", Arial, sans-serif;
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            text-align: center;
+            padding: 10px;
+            background-color: #6c757d;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .back-btn:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>خروجی الگوی تحقیق</h2>
+
+        <div class="section">
+            <div class="section-title">موضوع تحقیق</div>
+            <div class="section-content">{{ topic }}</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">نوع تحقیق</div>
+            <div class="section-content">{{ research_type }}</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">هدف تحقیق</div>
+            <div class="section-content">{{ goal }}</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">سوال پژوهش</div>
+            <div class="section-content">{{ question }}</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">ابزار گردآوری داده</div>
+            <div class="section-content">{{ data_tool }}</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">روش تحلیل داده</div>
+            <div class="section-content">{{ analysis }}</div>
+        </div>
+
+        <a href="/" class="back-btn">بازگشت به صفحه اصلی</a>
+    </div>
+</body>
+</html>
